@@ -1,0 +1,63 @@
+
+// footer 
+footer.footer.main-bg.related
+  .container.py-2.pt-3
+    .row.space-between
+      .col-4
+        a(href="/")
+          img(src="images/logo-grey.png", alt="beltone", class="img-fluid")
+        p
+          a(href="https://www.google.com/maps?ll=30.072517,31.228686&z=20&t=m&hl=en-US&gl=US&mapclient=embed&cid=2529001859924658066" target="_blank" rel="noreferrer").light-color
+            i(class="las la-map-marker-alt")
+            span Nile City Towers,,North Tower,
+              br
+              | 33rd Floor, Corniche El-Nil 2005 A
+        p
+          a(href="tel:20(0)224616300").light-color
+            i(class="las la-phone")
+            span +20 (0)2 2461 6300
+      .col-6
+        nav
+          ul.footer-list
+            li.active
+              a(href="/") Home
+            li
+              a(href="#") Our Firm
+            li
+              a(href="#") Our Business
+            li
+              a(href="#") Investor Relations
+            li
+              a(href="#") Media Relations
+
+        .newsletter.mt-3
+          form
+            label(for="newsletter_mail").right.white-color Subscribe to Newsletter
+            input(type="email", name="newsletter_mail", id="newsletter_mail", placeholder="Your e-mail address:")
+            button(type="button", name="newsletter_btn", id="newsletter_btn", class="second-bg white-color") Submit
+        
+        div.mt-2
+          a(href="#").secondary-color.mr-1
+            i(class="lab la-facebook la-lg")
+          a(href="#").secondary-color.mr-1
+            i(class="lab la-twitter la-lg")
+          a(href="#").secondary-color
+            i(class="lab la-linkedin la-lg")
+
+  .copyright.main-dark-bg.py-2.center
+    p.m-0 Designed &amp; Developed by 
+      a(href="http://icon-creations.com/" target="_blank" rel="noreferrer").white-color Icon Creations
+// ./footer 
+
+// Call
+.call.v-center
+  div.call-txt Request a call
+  a(href="tel:20(0)224616300").second-bg.white-color
+    i.las.la-phone.la-2x
+// ./Call
+
+script(src="https://unpkg.com/swiper/swiper-bundle.js")
+script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
+// My Custom Script 
+script(src="js/script.js")
+script(src="http://localhost:35729/livereload.js")

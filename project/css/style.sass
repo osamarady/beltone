@@ -1,0 +1,162 @@
+//-- Imports
+@import "sass/_mixins"
+@import "sass/_varibles"
+@import "sass/_fonts"
+@import "sass/_globals"
+
+// Navbar
+.fixed
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 2
+
+.main-btn
+  background-color: $secondary-color
+  color: $white-color
+  padding: 10px
+  border-radius: 3px
+  
+.right
+  text-align: right
+// ./Navbar
+
+// carousel 
+.carousel
+  .swiper-container 
+    width: 100%
+  .swiper-slide
+    display: -webkit-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    -webkit-justify-content: center
+    justify-content: center
+    -webkit-box-align: center
+    -ms-flex-align: center
+    -webkit-align-items: center
+    align-items: center
+  .right-container
+    position: absolute
+    bottom: 0
+    right: 0
+    .swiper-button-prev, .swiper-button-next
+      position: relative
+      margin: 0
+      left: auto
+      right: auto
+      top: auto
+      bottom: auto
+      display: inline-block
+      width: auto
+      height: auto
+      border: none
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-container-rtl .swiper-button-prev:after
+  display: none
+
+.social
+  position: absolute
+  top: 50%
+  right: 20px
+  z-index: 1
+  font-size: 20px
+
+// ./carousel 
+
+// stock 
+// .stock
+.w-70
+  width: 55%
+// ./stock 
+
+// company-profile
+.com-profile
+  background-image: url('../images/company_profile.png')
+  background-size: cover
+  background-position: center 
+// ./company-profile 
+
+// trade
+.trade
+  background-image: url('../images/trade.png')
+  background-size: cover
+  background-position: center 
+// ./trade 
+
+// footer
+.footer
+    .footer-list
+      list-style: none
+      padding: 0
+      li.active
+        border-bottom: 2px solid $secondary-color
+        font-weight: bold
+      li
+        display: inline-block
+        a
+          color: white
+      li:not(:last-child)
+        margin-right: 20px
+
+    .newsletter
+      form
+        display: block
+        label
+          display: block
+          margin-bottom: 15px
+        button, input
+          margin: 0
+          display: inline-block
+          border: none
+          padding: 10px 0
+          box-sizing: border-box
+        input
+          width: 69.5%
+          padding: 10px
+        button
+          width: 29.5%
+          margin-left: -5px
+
+    .copyright p
+      font-family: 'Roboto', 'sans-serif'
+      color: #dadada
+// ./footer 
+
+// Call
+.call
+  position: fixed
+  right: 20px
+  bottom: 20px
+  z-index: 2
+  a, .call-txt
+    display: inline-block
+  a
+    padding: 10px
+    border-radius: 50%
+  .call-txt
+    background-color: #fff
+    border-radius: 15px
+    padding: 10px
+    margin-right: 10px
+// ./Call
+
+
+/* == Responsive ==*/
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px)
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px)
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px)
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px)
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px)
+/* == ./Responsive ==*/

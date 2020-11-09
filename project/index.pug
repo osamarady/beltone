@@ -1,0 +1,188 @@
+doctype
+html
+  head
+    include pug/header
+  body
+    
+    include pug/nav
+
+    // carousel 
+    .carousel.related
+      // Slider main container 
+      div(class="swiper-container")
+          // Additional required wrapper 
+          div(class="swiper-wrapper")
+              // Slides 
+              -for(let x = 0; x<3; x++)
+                div(class="swiper-slide related")
+                  img(src="images/slider/01.png", alt="slide", class="img-fluid")
+                  div(style="position: absolute; top: 0; left: 0; right: 0; bottom: 0" class="v-center")
+                    .container
+                      .row(class="justify-end")
+                        .col-6
+                          .row
+                            .col-8
+                              .border-top.pt-3
+                                p.main-color Lorem ipsum dolor sit
+                                  br
+                                  | amet consectetur
+                                h1.main-color.text-bold.text-lg Lorem ipsum dolor sit amet consectetur adipiscing elit
+                            .col-4
+                              .white-background.main-color.p-2 2020
+                                br
+                                | Beltone Annual General Meeting
+
+                          .row
+                            .col-4
+                              .border-top.main-color.pt-2 Lorem ipsum dolor sit amet consectetur
+                            .col-4
+                              .border-top.main-color.pt-2 Lorem ipsum dolor sit amet consectetur
+                            .col-4
+                              .border-top.main-color.pt-2 Lorem ipsum dolor sit amet consectetur
+          // If we need pagination 
+          div(class="swiper-pagination")
+
+          // If we need navigation buttons
+          .container.related
+            .right-container
+              div(class="swiper-button-prev white-background p-1 second-color")
+                i(class="las la-arrow-left la-lg")
+              div(class="swiper-button-next white-background p-1 second-color")
+                i(class="las la-arrow-right la-lg")
+      
+      div.social
+        div.mb-1
+          a(href="#").main-color
+            i(class="lab la-facebook la-lg")
+        div.mb-1
+          a(href="#").main-color
+            i(class="lab la-twitter la-lg")
+        div
+          a(href="#").main-color
+            i(class="lab la-linkedin la-lg")
+
+    // ./carousel 
+
+    // About 
+    .about-section.my-5
+      .container
+        .row
+          .col-5.p-0
+            // Slider main container 
+            div(class="swiper-container")
+                // Additional required wrapper 
+                div(class="swiper-wrapper")
+                    // Slides 
+                    -for(let x = 1; x<3; x++)
+                      div(class="swiper-slide related")
+                        img(src="images/sm_carousel/0"+x+".png", alt="slide", class="img-fluid img-ratio")
+                // If we need pagination 
+                div(class="swiper-pagination")
+
+                // If we need navigation buttons
+                div(class="swiper-button-prev p-1 white-color")
+                  i(class="las la-arrow-left la-2x")
+                div(class="swiper-button-next p-1 white-color")
+                  i(class="las la-arrow-right la-2x")
+
+          .col-7.p-0
+            .row
+              .col-3.p-0
+                -var z = ['','Trade', 'Invest', 'Advisory', 'Borrow']
+                -for(let x = 1; x< 5; x++)
+                  .light-grey-bg.center.p-1.mb-sm
+                    img(src="images/about/0"+x+".png", alt="")
+                    p.m-0.mt-1 #{z[x]}
+              .col-9
+                .p-3
+                  p.second-color.uppercase.text-md What we do
+                  h2.main-color.text-lg.text-normal Securities
+                    br
+                    | Brokerage
+                  p.grey-color.line-height-9 Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  a(href="#").main-color.text-simibold.uppercase Explore more
+                    i.las.la-arrow-right.la-lg.ml-1
+    // ./About 
+
+    // stock-overview 
+    .stock.my-5.related
+      .w-70.ml-auto
+        img(src="images/stock.png", alt="stock" class="img-fluid")
+        .sticker.v-center
+          .container
+            .row
+              .col-4
+                p.second-color.uppercase.text-md stock overview
+                h2.main-color.text-lg.text-normal Lorem ipsum adipiscing elit, sed do eiusmod
+                p.grey-color.line-height-9 Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                a(href="#").main-color.text-simibold.uppercase Explore more
+                  i.las.la-arrow-right.la-lg.ml-1
+    // ./stock-overview 
+
+    // company-profile 
+    .com-profile.my-5.py-1.related
+      .container
+        .row.v-center
+          .col-6
+            img(src="images/b_beltone.png", alt="")
+          .col-6
+            p.second-color.uppercase.text-md Company Profile
+            h2.white-color.text-lg.text-normal Lorem ipsum adipiscing elit, sed do eiusmod
+            a(href="#").grey-color.text-simibold.uppercase read more
+              i.las.la-arrow-right.la-lg.ml-1
+    // ./company-profile 
+
+    // media 
+    .my-5.py-1.related
+      .container
+        p.second-color.uppercase.text-md media
+        h2.main-color.text-lg.text-normal Highlights
+        .row.mt-4
+          .col-6
+            img(src="images/blog/01.png", alt="" class="img-fluid")
+            p.grey-color may 24, 2020
+            h2.text-md.text-simibold Vestibulum nibh ligula, tempus eu porttitor sit amet
+            p.grey-color Nam sollicitudin libero eget risus elementum blandit. Integer efficitur quis nisl et venenatis. Nullam iaculis tempor molestie. Praesent lectus ligula, consectetur eu tortor id, pretium molestie ante. Donec consectetur eu tortor tincidunt urna dui, sit amet dignissim quam fermentum sed.
+            a(href="#").uppercase.main-color.text-simibold read more
+              i.las.la-arrow-right.la-lg.ml-1
+          .col-6
+            .row
+              .col-6
+                .border-x.px-1
+                  img(src="images/blog/02.png", alt="" class="img-fluid")
+                  p.grey-color may 15, 2020
+                  h2.text-md.text-simibold Malesuada fames ac ante ipsum primis in faucibus
+                  p.grey-color Nam sollicitudin libero eget risus elementum blandit. Integer efficitur quis nisl et venenatis. Nullam iaculis tempor molestie. Praesent lectus ligula, consectetur eu tortor id, pretium molestie ante. Donec consectetur eu tortor tincidunt urna dui, sit amet dignissim quam fermentum sed.
+                  a(href="#").uppercase.main-color.text-simibold read more
+                    i.las.la-arrow-right.la-lg.ml-1
+              .col-6
+                div
+                  p.grey-color may 13, 2020
+                  h2.text-md.text-simibold Malesuada fames ac ante ipsum primis in faucibus
+                  p.grey-color Nam sollicitudin libero eget risus elementum blandit. Integer efficitur quis nisl et
+                  a(href="#").uppercase.main-color.text-simibold read more
+                    i.las.la-arrow-right.la-lg.ml-1
+                hr.w-70
+                div
+                  p.grey-color may 13, 2020
+                  h2.text-md.text-simibold Malesuada fames ac ante ipsum primis in faucibus
+                  p.grey-color Nam sollicitudin libero eget risus elementum blandit. Integer efficitur quis nisl et
+                  a(href="#").uppercase.main-color.text-simibold read more
+                    i.las.la-arrow-right.la-lg.ml-1
+    // ./media 
+
+    // trade 
+    .trade.my-5.py-5.related
+      .container
+        .row.justify-end
+          .col-6.py-5
+            h2.second-color.text-lg.text-normal Trade 
+              span.main-color Wherever
+              br
+              | you are
+            p.grey-color.line-height-9 Beltone Trade, Beltone Financial’s online trading platform, utilizes the latest in technology to offer
+            a(href="#").uppercase.main-color.text-simibold Get Instant Access
+              i.las.la-arrow-right.la-lg.ml-1
+    // ./trade 
+
+    include pug/footer

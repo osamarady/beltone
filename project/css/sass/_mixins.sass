@@ -1,0 +1,27 @@
+//=== mixins
+@mixin transition ($prop, $time, $style)
+    -webkit-transition: $prop $time $style
+    -o-transition: $prop $time $style
+    transition: $prop $time $style
+
+@mixin animator ($name, $time, $style, $duration)
+    -webkit-animation: $name $time $style $duration forwards
+    -moz-animation: $name $time $style $duration forwards
+    -o-animation: $name $time $style $duration forwards
+    animation: $name $time $style $duration forwards
+
+@mixin keyframes ($keyName)
+    @-webkit-keyframes #{$keyName}
+        @content
+    @-moz-keyframes #{$keyName}
+        @content
+    @-o-keyframes #{$keyName}
+        @content
+    @keyframes #{$keyName}
+        @content
+
+@mixin background ($url)
+  background-image: $url
+  background-size: cover
+  background-position: center
+  background-attachment: fixed

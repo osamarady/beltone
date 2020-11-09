@@ -1,0 +1,201 @@
+/*== general Styles ==*/
+
+body
+  font-family: 'Space Grotesk'
+
+// Normalize
+body
+  margin: 0
+
+// Text Setting
+.small-text
+  font-size: 12px
+
+.medium-text
+  font-size: 14px
+
+.uppercase
+  text-transform: uppercase
+
+
+.container
+  width: 85%
+  margin: auto
+
+.container-lg
+  width: 95%
+  margin: auto
+
+.row
+  display: flex
+
+.v-center
+  display: flex
+  align-items: center
+
+.justify-end
+  display: flex
+  justify-content: flex-end
+
+.space-between
+  justify-content: space-between
+
+@for $var from 1 through 12
+  .col-#{$var}
+    width: (100%/(12/$var))
+    padding: .5rem
+
+// Padding
+@for $N from 0 through 5
+  .p-#{$N}
+    padding: #{$N}rem
+@for $N from 1 through 5
+  .pl-#{$N}
+    padding-left: #{$N}rem
+@for $N from 1 through 5
+  .pr-#{$N}
+    padding-right: #{$N}rem
+@for $N from 1 through 5
+  .pt-#{$N}
+    padding-top: #{$N}rem
+@for $N from 1 through 5
+  .py-#{$N}
+    padding: #{$N}rem 0
+@for $N from 1 through 5
+  .px-#{$N}
+    padding: 0 #{$N}rem
+// Margin
+.mb-sm
+  margin-bottom: 3px
+@for $N from 0 through 5
+  .m-#{$N}
+    margin: #{$N}rem
+@for $N from 1 through 5
+  .ml-#{$N}
+    margin-left: #{$N}rem
+@for $N from 1 through 5
+  .mr-#{$N}
+    margin-right: #{$N}rem
+@for $N from 1 through 5
+  .mt-#{$N}
+    margin-top: #{$N}rem
+@for $N from 1 through 5
+  .mb-#{$N}
+    margin-bottom: #{$N}rem
+@for $N from 1 through 5
+  .my-#{$N}
+    margin: #{$N}rem 0
+
+.ml-auto
+  margin-left: auto
+  
+.border-top
+  border-top: 1px solid #333
+
+.border-x
+  border-left: 1.5px solid #979797
+  border-right: 1.5px solid #979797
+
+// 
+.inline-block
+  display: inline-block
+
+.related
+  position: relative
+
+.sticker
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+
+.img-fluid
+  max-width: 100%
+
+.img-ratio
+  width: 100%
+  object-fit: cover
+  object-position: center
+
+
+a, button, select, input
+  &:focus, &:active
+    outline: none
+a, a:hover
+  text-decoration: none
+
+// Colors
+.white-color
+  color: $white-color
+
+.main-color
+  color: $main-color !important
+
+.main-dark-color
+  color: #30455e
+
+.second-color
+  color: $secondary-color !important
+
+.grey-color
+  color: #777
+
+.light-grey-color
+  color: #f2f5f8
+
+.light-color
+  color: #fbfbfb
+
+.secondary-color
+  color: #d3d1ce
+
+.light-grey-bg
+  background-color: #f2f5f8
+
+.main-bg
+  background-color: $main-color
+
+.main-dark-bg
+  background-color: #30455e
+
+.second-bg
+  background-color: $secondary-color
+
+.bg-black
+  background-color: #191919
+
+.white-background
+  background-color: $white-color
+
+.center
+  text-align: center
+
+@media (max-width: 992px)
+  .center-sm
+  	text-align: center !important
+
+// text
+.text-light
+  font-weight: lighter
+
+.text-normal
+  font-weight: normal
+
+.text-simibold
+  font-weight: 600
+
+.text-bold
+  font-weight: bold
+
+.text-lg
+  font-size: 2.7em
+
+.text-md
+  font-size: 1.5em
+
+.text-sm
+  font-size: .7em
+
+.line-height-9
+  line-height: 1.9
