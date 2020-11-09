@@ -15,29 +15,28 @@ html
               // Slides 
               -for(let x = 0; x<3; x++)
                 div(class="swiper-slide related")
-                  img(src="images/slider/01.png", alt="slide", class="img-fluid")
-                  div(style="position: absolute; top: 0; left: 0; right: 0; bottom: 0" class="v-center")
-                    .container
-                      .row(class="justify-end")
-                        .col-6
+                  div(style="background-image:url('images/slider/01.png')" class="v-center py-5 img-bg width-100")
+                    .container.py-5
+                      .row(class="justify-end justify-sm-start")
+                        .col-6.col-md-12
                           .row
-                            .col-8
+                            .col-8.col-xs-12
                               .border-top.pt-3
                                 p.main-color Lorem ipsum dolor sit
                                   br
                                   | amet consectetur
                                 h1.main-color.text-bold.text-lg Lorem ipsum dolor sit amet consectetur adipiscing elit
-                            .col-4
+                            .col-4.col-xs-12
                               .white-background.main-color.p-2 2020
                                 br
                                 | Beltone Annual General Meeting
 
                           .row
-                            .col-4
+                            .col-4.col-xs-12
                               .border-top.main-color.pt-2 Lorem ipsum dolor sit amet consectetur
-                            .col-4
+                            .col-4.col-xs-12
                               .border-top.main-color.pt-2 Lorem ipsum dolor sit amet consectetur
-                            .col-4
+                            .col-4.col-xs-12
                               .border-top.main-color.pt-2 Lorem ipsum dolor sit amet consectetur
           // If we need pagination 
           div(class="swiper-pagination")
@@ -67,7 +66,7 @@ html
     .about-section.my-5
       .container
         .row
-          .col-5.p-0
+          .col-5.col-md-12.p-0
             // Slider main container 
             div(class="swiper-container")
                 // Additional required wrapper 
@@ -85,15 +84,15 @@ html
                 div(class="swiper-button-next p-1 white-color")
                   i(class="las la-arrow-right la-2x")
 
-          .col-7.p-0
+          .col-7.col-md-12.p-0
             .row
-              .col-3.p-0
+              .col-3.col-xs-12.p-0
                 -var z = ['','Trade', 'Invest', 'Advisory', 'Borrow']
                 -for(let x = 1; x< 5; x++)
                   .light-grey-bg.center.p-1.mb-sm
-                    img(src="images/about/0"+x+".png", alt="")
+                    img(src="images/about/0"+x+".png", alt="", class="img-fluid")
                     p.m-0.mt-1 #{z[x]}
-              .col-9
+              .col-9.col-xs-12
                 .p-3
                   p.second-color.uppercase.text-md What we do
                   h2.main-color.text-lg.text-normal Securities
@@ -106,12 +105,12 @@ html
 
     // stock-overview 
     .stock.my-5.related
-      .w-70.ml-auto
+      .w-5.w-100.ml-auto
         img(src="images/stock.png", alt="stock" class="img-fluid")
-        .sticker.v-center
+        .sticker.sticker-relative-md.v-center
           .container
             .row
-              .col-4
+              .col-4.col-md-12
                 p.second-color.uppercase.text-md stock overview
                 h2.main-color.text-lg.text-normal Lorem ipsum adipiscing elit, sed do eiusmod
                 p.grey-color.line-height-9 Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -122,10 +121,10 @@ html
     // company-profile 
     .com-profile.my-5.py-1.related
       .container
-        .row.v-center
-          .col-6
-            img(src="images/b_beltone.png", alt="")
-          .col-6
+        .row.v-center.h-center
+          .col-6.col-md-4.col-xs-6
+            img(src="images/b_beltone.png", alt="", class="img-fluid")
+          .col-6.col-md-8.col-xs-12
             p.second-color.uppercase.text-md Company Profile
             h2.white-color.text-lg.text-normal Lorem ipsum adipiscing elit, sed do eiusmod
             a(href="#").grey-color.text-simibold.uppercase read more
@@ -138,24 +137,24 @@ html
         p.second-color.uppercase.text-md media
         h2.main-color.text-lg.text-normal Highlights
         .row.mt-4
-          .col-6
+          .col-6.col-md-12
             img(src="images/blog/01.png", alt="" class="img-fluid")
             p.grey-color may 24, 2020
             h2.text-md.text-simibold Vestibulum nibh ligula, tempus eu porttitor sit amet
             p.grey-color Nam sollicitudin libero eget risus elementum blandit. Integer efficitur quis nisl et venenatis. Nullam iaculis tempor molestie. Praesent lectus ligula, consectetur eu tortor id, pretium molestie ante. Donec consectetur eu tortor tincidunt urna dui, sit amet dignissim quam fermentum sed.
             a(href="#").uppercase.main-color.text-simibold read more
               i.las.la-arrow-right.la-lg.ml-1
-          .col-6
+          .col-6.col-md-12
             .row
-              .col-6
-                .border-x.px-1
+              .col-6.col-sm-12
+                .border-x.border-sm-0.px-1.px-sm-0
                   img(src="images/blog/02.png", alt="" class="img-fluid")
                   p.grey-color may 15, 2020
                   h2.text-md.text-simibold Malesuada fames ac ante ipsum primis in faucibus
                   p.grey-color Nam sollicitudin libero eget risus elementum blandit. Integer efficitur quis nisl et venenatis. Nullam iaculis tempor molestie. Praesent lectus ligula, consectetur eu tortor id, pretium molestie ante. Donec consectetur eu tortor tincidunt urna dui, sit amet dignissim quam fermentum sed.
                   a(href="#").uppercase.main-color.text-simibold read more
                     i.las.la-arrow-right.la-lg.ml-1
-              .col-6
+              .col-6.col-sm-12
                 div
                   p.grey-color may 13, 2020
                   h2.text-md.text-simibold Malesuada fames ac ante ipsum primis in faucibus
@@ -172,10 +171,10 @@ html
     // ./media 
 
     // trade 
-    .trade.my-5.py-5.related
+    .trade.img-bg.my-5.py-5.related
       .container
         .row.justify-end
-          .col-6.py-5
+          .col-6.col-xs-12.py-5
             h2.second-color.text-lg.text-normal Trade 
               span.main-color Wherever
               br

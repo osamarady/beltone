@@ -1,5 +1,8 @@
 /*== general Styles ==*/
 
+*
+  box-sizing: border-box
+
 body
   font-family: 'Space Grotesk'
 
@@ -28,10 +31,15 @@ body
 
 .row
   display: flex
+  flex-wrap: wrap
 
 .v-center
   display: flex
   align-items: center
+
+.h-center
+  display: flex
+  justify-content: center
 
 .justify-end
   display: flex
@@ -118,6 +126,10 @@ body
   object-fit: cover
   object-position: center
 
+.img-bg
+  background-position: center
+  background-size: cover
+
 
 a, button, select, input
   &:focus, &:active
@@ -199,3 +211,7 @@ a, a:hover
 
 .line-height-9
   line-height: 1.9
+
+// width
+.width-100
+  width: 100%

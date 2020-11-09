@@ -68,7 +68,7 @@
 
 // stock 
 // .stock
-.w-70
+.w-5
   width: 55%
 // ./stock 
 
@@ -145,18 +145,81 @@
 
 
 /* == Responsive ==*/
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px)
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px)
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px)
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px)
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px)
+@media (max-width: 1200px)
+  @for $var from 1 through 12
+    .col-xl-#{$var}
+      width: (100%/(12/$var))
+      padding: .5rem
+
+  .justify-lx-start
+    justify-content: start
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) and (max-width: 1199.98px)
+@media (max-width: 992px)
+  @for $var from 1 through 12
+    .col-lg-#{$var}
+      width: (100%/(12/$var))
+      padding: .5rem
+
+  .justify-lg-start
+    justify-content: start
+
+// Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) and (max-width: 991.98px)
+@media (max-width: 768px)
+  @for $var from 1 through 12
+    .col-md-#{$var}
+      width: (100%/(12/$var))
+      padding: .5rem
+
+  .justify-md-start
+    justify-content: start
+
+  .w-100
+    width: 100%
+
+  .sticker-relative-md
+    position: relative
+
+  .footer .footer-list li
+    margin-bottom: 10px
+    margin-right: 10px !important
+
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) and (max-width: 767.98px)
+@media (max-width: 576px)
+  @for $var from 1 through 12
+    .col-sm-#{$var}
+      width: (100%/(12/$var))
+      padding: 12px
+
+  @for $N from 1 through 5
+    .mr-sm-#{$N}
+      margin-right: #{$N}rem
+
+  .justify-sm-start
+    justify-content: start
+
+  @for $N from 0 through 5
+    .px-sm-#{$N}
+      padding: 0 #{$N}rem
+  
+  .border-sm-0
+    border: none
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px)
+  .main-btn
+    padding: 4px
+    font-size: .6em
+  @for $var from 1 through 12
+    .col-xs-#{$var}
+      width: (100%/(12/$var))
+      padding: .5rem
+
+  .justify-xs-start
+    justify-content: start
 /* == ./Responsive ==*/
