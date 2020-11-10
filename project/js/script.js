@@ -76,3 +76,12 @@ function tabControl(element){
 	document.getElementById(element).style.display = 'block';
 	document.getElementById(element).classList.add('d-block');
 }
+
+
+var x = document.getElementsByClassName('carousel-img');
+
+console.log(document.getElementById('sliderUpper').offsetHeight, x.length);
+
+for (var i = 0; i < x.length; i++) {
+	x[i].style.height = (document.getElementById('sliderUpper').clientHeight +200)  + 'px';
+}

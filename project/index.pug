@@ -13,6 +13,29 @@ html(lang="en")
 
     // carousel 
     .carousel.related
+      div(class="sticker v-center py-5 width-100")
+        .container.py-5#sliderUpper
+          .row(class="justify-end justify-sm-start")
+            .col-6.col-lg-12(style="z-index: 2")
+              .row
+                .col-8.col-xs-12
+                  .border-top.pt-3
+                    p.main-color Lorem ipsum dolor sit
+                      br
+                      | amet consectetur
+                    h1.main-color.text-bold.text-lg Lorem ipsum dolor sit amet consectetur adipiscing elit
+                .col-4.col-xs-12
+                  .white-background.main-color.p-2 2020
+                    br
+                    | Beltone Annual General Meeting
+
+              .row
+                .col-4.col-xs-12
+                  .border-top.main-color.pt-2 Lorem ipsum dolor sit amet consectetur
+                .col-4.col-xs-12
+                  .border-top.main-color.pt-2 Lorem ipsum dolor sit amet consectetur
+                .col-4.col-xs-12
+                  .border-top.main-color.pt-2 Lorem ipsum dolor sit amet consectetur
       // Slider main container 
       div(class="swiper-container")
           // Additional required wrapper 
@@ -20,29 +43,7 @@ html(lang="en")
               // Slides 
               -for(let x = 0; x<3; x++)
                 div(class="swiper-slide related")
-                  div(style="background-image:url('images/slider/01.png')" class="v-center py-5 img-bg width-100")
-                    .container.py-5
-                      .row(class="justify-end justify-sm-start")
-                        .col-6.col-lg-12
-                          .row
-                            .col-8.col-xs-12
-                              .border-top.pt-3
-                                p.main-color Lorem ipsum dolor sit
-                                  br
-                                  | amet consectetur
-                                h1.main-color.text-bold.text-lg Lorem ipsum dolor sit amet consectetur adipiscing elit
-                            .col-4.col-xs-12
-                              .white-background.main-color.p-2 2020
-                                br
-                                | Beltone Annual General Meeting
-
-                          .row
-                            .col-4.col-xs-12
-                              .border-top.main-color.pt-2 Lorem ipsum dolor sit amet consectetur
-                            .col-4.col-xs-12
-                              .border-top.main-color.pt-2 Lorem ipsum dolor sit amet consectetur
-                            .col-4.col-xs-12
-                              .border-top.main-color.pt-2 Lorem ipsum dolor sit amet consectetur
+                  img(src="images/slider/01.png", alt="slide 01", class="img-fluid img-ratio w-100 carousel-img")
           // If we need pagination 
           div(class="swiper-pagination")
 
