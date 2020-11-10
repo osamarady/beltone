@@ -85,28 +85,29 @@ html(lang="en")
                   i(class="las la-arrow-right la-2x")
 
           .col-7.col-lg-12.p-0
+            -var z = ['','Trade', 'Invest', 'Advisory', 'Borrow']
             .row.h100
               .col-3.col-xs-12.p-0
                 .light-grey-bg.h100
-                  -var z = ['','Trade', 'Invest', 'Advisory', 'Borrow']
                   -for(let x = 1; x< 5; x++)
                     -if(x !=4)
-                      .light-grey-bg.center.p-1.border-bottom-white
+                      .light-grey-bg.center.p-1.border-bottom-white(onclick="tabControl('"+z[x]+"')")
                         img(src="images/about/0"+x+".png", alt="What we do", class="img-fluid")
                         p.m-0.mt-1 #{z[x]}
                     -else
-                      .light-grey-bg.center.p-1
+                      .light-grey-bg.center.p-1(onclick="tabControl('"+z[x]+"')")
                         img(src="images/about/0"+x+".png", alt="What we do", class="img-fluid")
                         p.m-0.mt-1 #{z[x]}
               .col-9.col-xs-12
-                .p-3.p-xs-0
-                  p.second-color.uppercase.text-md What we do
-                  h2.main-color.text-lg.text-normal Securities
-                    br
-                    | Brokerage
-                  p.grey-color.line-height-9 Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  a(href="#").main-color.text-simibold.uppercase Explore more
-                    i.las.la-arrow-right.la-lg.ml-1
+                -for(let x = 1; x< 5; x++)
+                  .tabe-details.p-3.p-xs-0.d-none(id=z[x])
+                    p.second-color.uppercase.text-md What we do [ #{z[x]} ]
+                    h2.main-color.text-lg.text-normal Securities
+                      br
+                      | Brokerage
+                    p.grey-color.line-height-9 Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut labore. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    a(href="#").main-color.text-simibold.uppercase Explore more
+                      i.las.la-arrow-right.la-lg.ml-1
     // ./About 
 
     // stock-overview 
