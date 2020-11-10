@@ -60,7 +60,7 @@
         <div class="row v-center">
           <div class="col-6 v-center">
             <div class="inline-block mr-1">
-              <button class="bg-transparent border-none main-color" type="button" onclick="menuOpener()"><i class="la la-bars la-2x"></i></button>
+              <button class="bg-transparent border-none main-color" type="button" aria-label="menu" onclick="menuOpener()"><i class="la la-bars la-2x"></i></button>
             </div>
             <div class="inline-block"><a href="/" style="display: inline-block"><img class="img-fluid" src="images/logo.png" alt="Beltone"></a></div>
           </div>
@@ -77,7 +77,7 @@
             <div class="row v-center">
               <div class="col-6 v-center">
                 <div class="inline-block mr-1">
-                  <button class="bg-transparent border-none main-color" type="button" onclick="menuCloser()"><i class="la la-times la-2x"></i></button>
+                  <button class="bg-transparent border-none main-color" type="button" aria-label="close" onclick="menuCloser()"><i class="la la-times la-2x"></i></button>
                 </div>
                 <div class="inline-block"><a href="/" style="display: inline-block"><img class="img-fluid" src="images/logo.png" alt="Beltone"></a></div>
               </div>
@@ -131,7 +131,7 @@
         </div>
         <!-- Descktop mega Menu-->
         <div class="mobile-menu d-none d-lg-block p-2" id="mobileMenu">
-          <button class="bg-transparent border-none main-color" type="button" onclick="menuCloser()"><i class="la la-times la-2x"></i></button>
+          <button class="bg-transparent border-none main-color" type="button" aria-label="close" onclick="menuCloser()"><i class="la la-times la-2x"></i></button>
           <div class="center mt-2"><img class="img-fluid" src="images/logo.png" alt="Beltone" width="150"></div>
           <ul class="mm-list">
             <li>
@@ -352,9 +352,9 @@
         </div>
       </div>
       <div class="social">
-        <div class="mb-1"><a class="main-color" href="#"><i class="lab la-facebook la-lg"></i></a></div>
-        <div class="mb-1"><a class="main-color" href="#"><i class="lab la-twitter la-lg"></i></a></div>
-        <div><a class="main-color" href="#"><i class="lab la-linkedin la-lg"></i></a></div>
+        <div class="mb-1"><a class="main-color" href="#" target="_blank" rel="noreferrer" aria-label="facebook"><i class="lab la-facebook la-lg"></i></a></div>
+        <div class="mb-1"><a class="main-color" href="#" target="_blank" rel="noreferrer" aria-label="twitter"><i class="lab la-twitter la-lg"></i></a></div>
+        <div><a class="main-color" href="#" target="_blank" rel="noreferrer" aria-label="linkedin"><i class="lab la-linkedin la-lg"></i></a></div>
       </div>
     </div>
     <!-- ./carousel -->
@@ -494,7 +494,7 @@
     <footer class="footer main-bg related center-sm">
       <div class="container py-2 pt-3">
         <div class="row space-between">
-          <div class="col-4 col-md-6 col-xs-12"><a href="/"><img class="img-fluid" src="images/logo-grey.png" alt="beltone"></a>
+          <div class="col-4 col-md-6 col-xs-12"><a href="/" aria-label="beltone logo"><img class="img-fluid" src="images/logo-grey.png" alt="beltone"></a>
             <p class="line-height-9"><a class="light-color" href="https://www.google.com/maps?ll=30.072517,31.228686&amp;z=20&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=embed&amp;cid=2529001859924658066" target="_blank" rel="noreferrer"><i class="las la-map-marker-alt mr-1"></i><span>Nile City Towers,,North Tower,<br>33rd Floor, Corniche El-Nil 2005 A</span></a></p>
             <p><a class="light-color" href="tel:20(0)224616300"><i class="las la-phone mr-1"></i><span>+20 (0)2 2461 6300</span></a></p>
           </div>
@@ -515,7 +515,7 @@
                 <button class="second-bg white-color" type="button" name="newsletter_btn" id="newsletter_btn">Submit</button>
               </form>
             </div>
-            <div class="mt-2"><a class="secondary-color mr-1" href="#"><i class="lab la-facebook la-lg"></i></a><a class="secondary-color mr-1" href="#"><i class="lab la-twitter la-lg"></i></a><a class="secondary-color" href="#"><i class="lab la-linkedin la-lg"></i></a></div>
+            <div class="mt-2"><a class="secondary-color mr-1" href="#" target="_blank" rel="noreferrer" aria-label="facebook"><i class="lab la-facebook la-lg"></i></a><a class="secondary-color mr-1" href="#" target="_blank" rel="noreferrer" aria-label="twitter"><i class="lab la-twitter la-lg"></i></a><a class="secondary-color" href="#" target="_blank" rel="noreferrer" aria-label="linkedin"><i class="lab la-linkedin la-lg"></i></a></div>
           </div>
         </div>
       </div>
@@ -526,13 +526,12 @@
     <!-- ./footer -->
     <!-- Call-->
     <div class="call v-center">
-      <div class="call-txt">Request a call</div><a class="second-bg white-color" href="tel:20(0)224616300"><i class="las la-phone la-2x"></i></a>
+      <div class="call-txt">Request a call</div><a class="second-bg white-color" href="tel:20(0)224616300" aria-label="phone"><i class="las la-phone la-2x"></i></a>
     </div>
     <!-- ./Call-->
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- My Custom Script -->
     <script src="js/script.js"></script>
-    <script src="http://localhost:35729/livereload.js"></script>
   </body>
 </html>
