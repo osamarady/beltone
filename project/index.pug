@@ -96,11 +96,11 @@ html(lang="en")
                 .light-grey-bg.h100
                   -for(let x = 1; x< 5; x++)
                     -if(x !=4)
-                      .light-grey-bg.center.p-1.border-bottom-white(onclick="tabControl('"+z[x]+"')")
+                      .light-grey-bg.tab-hvr.center.p-1.border-bottom-white(onclick="tabControl('"+z[x]+"')")
                         img(src="images/about/0"+x+".png", alt="What we do", class="img-fluid")
                         p.m-0.mt-1 #{z[x]}
                     -else
-                      .light-grey-bg.center.p-1(onclick="tabControl('"+z[x]+"')")
+                      .light-grey-bg.tab-hvr.center.p-1(onclick="tabControl('"+z[x]+"')")
                         img(src="images/about/0"+x+".png", alt="What we do", class="img-fluid")
                         p.m-0.mt-1 #{z[x]}
               .col-9.col-xs-12

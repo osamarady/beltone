@@ -67,7 +67,7 @@ for (i = 0; i < coll.length; i++) {
 
 function tabControl(element){
 	var x = document.querySelectorAll('.tabe-details');
-	console.log(x.length);
+	
 	for (i=0; i<x.length; i++){
 		x[i].style.display = 'none';
 		x[i].classList.add('d-none');
