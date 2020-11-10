@@ -20,7 +20,7 @@ function navScroll () {
 	
 	if (scrollValue > 100) {
 		document.getElementById("navBar").style.backgroundColor = "#fff";
-		document.getElementById("navBar").style.transition = "all .5s ease-in";
+		document.getElementById("navBar").style.transition = "all .3s ease-in";
 		document.getElementById("navBar").style.boxShadow = "1px 1px 10px rgba(0,0,0,.25)";
 	} else {
 		document.getElementById("navBar").style.backgroundColor = "transparent";
@@ -28,7 +28,7 @@ function navScroll () {
     }
 };
 
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.carousel .swiper-container', {
 	navigation: {
 	  nextEl: '.swiper-button-next',
 	  prevEl: '.swiper-button-prev',
@@ -41,6 +41,24 @@ var swiper = new Swiper('.swiper-container', {
 		slideShadows: true,
 	  },
 });
+var swiperAbout = new Swiper('.about-section .swiper-container', {
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
+	},
+	loop: true,
+	autoplay: {
+		delay: 5000,
+	},
+	cubeEffect: {
+		slideShadows: true,
+	  },
+});
+
+function slidePointer(index) {
+	swiperAbout.slideTo(index);
+	swiperAbout.update();
+}
 
 function menuOpener() {
 	document.getElementById("megaMenu").classList.add("open");
@@ -85,9 +103,14 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-function tabControl(element){
-	var x = document.querySelectorAll('.tabe-details');
+function tabControl(element, index){
+	slidePointer(index);
+	var x = document.querySelectorAll('.tabe-details'),
+		taps = document.querySelectorAll('.taps');
 	
+	for (i=0; i<taps.length; i++){
+		taps[i].classList.remove('active');
+	}
 	for (i=0; i<x.length; i++){
 		x[i].style.display = 'none';
 		x[i].classList.add('d-none');
@@ -95,6 +118,7 @@ function tabControl(element){
 	}
 	document.getElementById(element).style.display = 'block';
 	document.getElementById(element).classList.add('d-block');
+	document.getElementById(element+"_tap").classList.add('active');
 }
 
 

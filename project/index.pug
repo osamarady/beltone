@@ -3,7 +3,6 @@ html(lang="en")
   head
     include pug/header
   body
-    
     div#snippet(class="snippet")
       div(class="d-flex v-center h-center h100")
         div(class="stage" style="width: 200px")
@@ -78,7 +77,7 @@ html(lang="en")
                 // Additional required wrapper 
                 div(class="swiper-wrapper")
                     // Slides 
-                    -for(let x = 1; x<3; x++)
+                    -for(let x = 1; x<5; x++)
                       div(class="swiper-slide related")
                         img(src="images/sm_carousel/0"+x+".png", alt="slide", class="img-fluid img-ratio h100")
                 // If we need pagination 
@@ -97,11 +96,11 @@ html(lang="en")
                 .light-grey-bg.h100
                   -for(let x = 1; x< 5; x++)
                     -if(x !=4)
-                      .light-grey-bg.tab-hvr.clickable.center.p-1.border-bottom-white(onclick="tabControl('"+z[x]+"')")
+                      .light-grey-bg.tab-hvr.clickable.taps.center.p-1.border-bottom-white(id=z[x]+"_tap" onclick="tabControl('"+z[x]+"', "+x+")")
                         img(src="images/about/0"+x+".png", alt="What we do", class="img-fluid")
                         p.m-0.mt-1 #{z[x]}
                     -else
-                      .light-grey-bg.tab-hvr.clickable.center.p-1(onclick="tabControl('"+z[x]+"')")
+                      .light-grey-bg.tab-hvr.clickable.center.taps.p-1(id=z[x]+"_tap" onclick="tabControl('"+z[x]+"', "+x+")")
                         img(src="images/about/0"+x+".png", alt="What we do", class="img-fluid")
                         p.m-0.mt-1 #{z[x]}
               .col-9.col-xs-12
