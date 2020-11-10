@@ -3,16 +3,320 @@ nav.fixed#navBar
         div.row.v-center
             div.col-6.v-center
                 div.inline-block.mr-1
-                    a(href="#")
+                    button(onclick="menuOpener()").bg-transparent.border-none.main-color
                         i.la.la-bars.la-2x
                 div.inline-block
                     a(href="/" style="display: inline-block")
                         img(src="images/logo.png", alt="Beltone", class="img-fluid")
             div.col-6.right
                 div.inline-block.mr-1.mr-sm-0
-                    a(href="#" class="search-btn")
+                    a(href="#" class="search-btn main-color")
                         i.la.la-search.la-lg
                 div.inline-block
                     a(href="#" class="main-btn uppercase")
                         i.la.la-user.la-lg
                         | client login
+
+    // Mega Menu
+    #megaMenu.mega-menu
+        .bg-white.d-xl-block.d-lg-none
+            div.container-lg
+                div.row.v-center
+                    div.col-6.v-center
+                        div.inline-block.mr-1
+                            button(onclick="menuCloser()").bg-transparent.border-none.main-color
+                                i.la.la-times.la-2x
+                        div.inline-block
+                            a(href="/" style="display: inline-block")
+                                img(src="images/logo.png", alt="Beltone", class="img-fluid")
+                    div.col-6.right
+                        div.inline-block.mr-1.mr-sm-0
+                            a(href="#" class="search-btn main-color")
+                                i.la.la-search.la-lg
+                        div.inline-block
+                            a(href="#" class="main-btn uppercase")
+                                i.la.la-user.la-lg
+                                | client login
+
+        // Descktop mega Menu
+        .m-menu.d-xl-block.d-lg-none
+            .container-lg
+                .row
+                    .col-6.col-md-12
+                        .row
+                            .col-6.col-md-12
+                                .border-right.p-1
+                                    ul.mm-list
+                                        li 
+                                            a(href="#").main-color Home
+                                        li
+                                            a(href="#").main-color Our Firm
+                                        li
+                                            a(href="#").main-color Our Business
+                                        li
+                                            a(href="#").main-color Investor Relations
+                                        li
+                                            a(href="#").main-color Media Relations
+                                        li
+                                            a(href="#").main-color Careers
+                                        li
+                                            a(href="#").main-color Contact Us
+                            .col-6.col-md-12
+                                .p-3
+                                    ul.mm-list
+                                        li 
+                                            a(href="#").main-color Stock Overview
+                                        li
+                                            a(href="#").main-color Owners and Subsidiaries
+                                        li
+                                            a(href="#").main-color Company Profile
+                                        li
+                                            a(href="#").main-color Insider Transactions
+                                        li
+                                            a(href="#").main-color Disclosures
+                                        li
+                                            a(href="#").main-color Investor Protection
+                                        li
+                                            a(href="#").main-color IR Media Relations
+                    .col-6.col-md-12.article.p-3
+                        a(href="#")
+                            img(src="images/article.png", alt="", class="img-fluid")
+                        p
+                            a(href="#").grey-color Lorem ipsum dolor sit amet, consectetur elit
+                        p
+                            a(href="#").text-bold.second-color Read More
+
+        
+        // Descktop mega Menu
+        #mobileMenu.mobile-menu.d-none.d-lg-block.p-2
+            button(onclick="menuCloser()").bg-transparent.border-none.main-color
+                i.la.la-times.la-2x
+            div.center.mt-2
+                img(src="images/logo.png", alt="Beltone", width="150", class="img-fluid")
+            ul.mm-list
+                li
+                    div.collapsible.main-color Home
+                    .content
+                        ul.mm-list
+                            li 
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Stock Overview
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Owners and Subsidiaries
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Company Profile
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Insider Transactions
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Disclosures
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Investor Protection
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | IR Media Relations
+                li
+                    .collapsible.main-color Our Firm
+                    .content
+                        ul.mm-list
+                            li 
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Stock Overview
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Owners and Subsidiaries
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Company Profile
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Insider Transactions
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Disclosures
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Investor Protection
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | IR Media Relations
+                li
+                    .collapsible.main-color Our Business
+                    .content
+                        ul.mm-list
+                            li 
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Stock Overview
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Owners and Subsidiaries
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Company Profile
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Insider Transactions
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Disclosures
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Investor Protection
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | IR Media Relations
+                li
+                    .collapsible.main-color Investor Relations
+                    .content
+                        ul.mm-list
+                            li 
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Stock Overview
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Owners and Subsidiaries
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Company Profile
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Insider Transactions
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Disclosures
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Investor Protection
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | IR Media Relations
+                li
+                    .collapsible.main-color Media Relations
+                    .content
+                        ul.mm-list
+                            li 
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Stock Overview
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Owners and Subsidiaries
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Company Profile
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Insider Transactions
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Disclosures
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Investor Protection
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | IR Media Relations
+                li
+                    .collapsible.main-color Careers
+                    .content
+                        ul.mm-list
+                            li 
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Stock Overview
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Owners and Subsidiaries
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Company Profile
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Insider Transactions
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Disclosures
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Investor Protection
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | IR Media Relations
+                li
+                    .collapsible.main-color Contact Us
+                    .content
+                        ul.mm-list
+                            li 
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Stock Overview
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Owners and Subsidiaries
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Company Profile
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Insider Transactions
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Disclosures
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | Investor Protection
+                            li
+                                a(href="#").main-color
+                                    i(class="las la-angle-right")
+                                    | IR Media Relations
+
+        .overlay(onclick="menuCloser()")

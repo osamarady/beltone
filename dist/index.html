@@ -59,14 +59,182 @@
       <div class="container-lg">
         <div class="row v-center">
           <div class="col-6 v-center">
-            <div class="inline-block mr-1"><a href="#"><i class="la la-bars la-2x"></i></a></div>
+            <div class="inline-block mr-1">
+              <button class="bg-transparent border-none main-color" onclick="menuOpener()"><i class="la la-bars la-2x"></i></button>
+            </div>
             <div class="inline-block"><a href="/" style="display: inline-block"><img class="img-fluid" src="images/logo.png" alt="Beltone"></a></div>
           </div>
           <div class="col-6 right">
-            <div class="inline-block mr-1 mr-sm-0"><a class="search-btn" href="#"><i class="la la-search la-lg"></i></a></div>
+            <div class="inline-block mr-1 mr-sm-0"><a class="search-btn main-color" href="#"><i class="la la-search la-lg"></i></a></div>
             <div class="inline-block"><a class="main-btn uppercase" href="#"><i class="la la-user la-lg"></i>client login</a></div>
           </div>
         </div>
+      </div>
+      <!-- Mega Menu-->
+      <div class="mega-menu" id="megaMenu">
+        <div class="bg-white d-xl-block d-lg-none">
+          <div class="container-lg">
+            <div class="row v-center">
+              <div class="col-6 v-center">
+                <div class="inline-block mr-1">
+                  <button class="bg-transparent border-none main-color" onclick="menuCloser()"><i class="la la-times la-2x"></i></button>
+                </div>
+                <div class="inline-block"><a href="/" style="display: inline-block"><img class="img-fluid" src="images/logo.png" alt="Beltone"></a></div>
+              </div>
+              <div class="col-6 right">
+                <div class="inline-block mr-1 mr-sm-0"><a class="search-btn main-color" href="#"><i class="la la-search la-lg"></i></a></div>
+                <div class="inline-block"><a class="main-btn uppercase" href="#"><i class="la la-user la-lg"></i>client login</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Descktop mega Menu-->
+        <div class="m-menu d-xl-block d-lg-none">
+          <div class="container-lg">
+            <div class="row">
+              <div class="col-6 col-md-12">
+                <div class="row">
+                  <div class="col-6 col-md-12">
+                    <div class="border-right p-1">
+                      <ul class="mm-list">
+                        <li> <a class="main-color" href="#">Home</a></li>
+                        <li><a class="main-color" href="#">Our Firm</a></li>
+                        <li><a class="main-color" href="#">Our Business</a></li>
+                        <li><a class="main-color" href="#">Investor Relations</a></li>
+                        <li><a class="main-color" href="#">Media Relations</a></li>
+                        <li><a class="main-color" href="#">Careers</a></li>
+                        <li><a class="main-color" href="#">Contact Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-6 col-md-12">
+                    <div class="p-3">
+                      <ul class="mm-list">
+                        <li> <a class="main-color" href="#">Stock Overview</a></li>
+                        <li><a class="main-color" href="#">Owners and Subsidiaries</a></li>
+                        <li><a class="main-color" href="#">Company Profile</a></li>
+                        <li><a class="main-color" href="#">Insider Transactions</a></li>
+                        <li><a class="main-color" href="#">Disclosures</a></li>
+                        <li><a class="main-color" href="#">Investor Protection</a></li>
+                        <li><a class="main-color" href="#">IR Media Relations</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-12 article p-3"><a href="#"><img class="img-fluid" src="images/article.png" alt=""></a>
+                <p><a class="grey-color" href="#">Lorem ipsum dolor sit amet, consectetur elit</a></p>
+                <p><a class="text-bold second-color" href="#">Read More</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Descktop mega Menu-->
+        <div class="mobile-menu d-none d-lg-block p-2" id="mobileMenu">
+          <button class="bg-transparent border-none main-color" onclick="menuCloser()"><i class="la la-times la-2x"></i></button>
+          <div class="center mt-2"><img class="img-fluid" src="images/logo.png" alt="Beltone" width="150"></div>
+          <ul class="mm-list">
+            <li>
+              <div class="collapsible main-color">Home</div>
+              <div class="content">
+                <ul class="mm-list">
+                  <li> <a class="main-color" href="#"><i class="las la-angle-right"></i>Stock Overview</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Owners and Subsidiaries</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Company Profile</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Insider Transactions</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Disclosures</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Investor Protection</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>IR Media Relations</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible main-color">Our Firm</div>
+              <div class="content">
+                <ul class="mm-list">
+                  <li> <a class="main-color" href="#"><i class="las la-angle-right"></i>Stock Overview</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Owners and Subsidiaries</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Company Profile</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Insider Transactions</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Disclosures</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Investor Protection</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>IR Media Relations</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible main-color">Our Business</div>
+              <div class="content">
+                <ul class="mm-list">
+                  <li> <a class="main-color" href="#"><i class="las la-angle-right"></i>Stock Overview</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Owners and Subsidiaries</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Company Profile</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Insider Transactions</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Disclosures</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Investor Protection</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>IR Media Relations</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible main-color">Investor Relations</div>
+              <div class="content">
+                <ul class="mm-list">
+                  <li> <a class="main-color" href="#"><i class="las la-angle-right"></i>Stock Overview</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Owners and Subsidiaries</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Company Profile</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Insider Transactions</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Disclosures</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Investor Protection</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>IR Media Relations</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible main-color">Media Relations</div>
+              <div class="content">
+                <ul class="mm-list">
+                  <li> <a class="main-color" href="#"><i class="las la-angle-right"></i>Stock Overview</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Owners and Subsidiaries</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Company Profile</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Insider Transactions</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Disclosures</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Investor Protection</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>IR Media Relations</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible main-color">Careers</div>
+              <div class="content">
+                <ul class="mm-list">
+                  <li> <a class="main-color" href="#"><i class="las la-angle-right"></i>Stock Overview</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Owners and Subsidiaries</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Company Profile</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Insider Transactions</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Disclosures</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Investor Protection</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>IR Media Relations</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <div class="collapsible main-color">Contact Us</div>
+              <div class="content">
+                <ul class="mm-list">
+                  <li> <a class="main-color" href="#"><i class="las la-angle-right"></i>Stock Overview</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Owners and Subsidiaries</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Company Profile</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Insider Transactions</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Disclosures</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>Investor Protection</a></li>
+                  <li><a class="main-color" href="#"><i class="las la-angle-right"></i>IR Media Relations</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="overlay" onclick="menuCloser()"></div>
       </div>
     </nav>
     <!-- carousel -->
