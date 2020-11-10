@@ -1,5 +1,5 @@
 doctype
-html
+html(lang="en")
   head
     include pug/header
   body
@@ -92,11 +92,11 @@ html
                   -for(let x = 1; x< 5; x++)
                     -if(x !=4)
                       .light-grey-bg.center.p-1.border-bottom-white
-                        img(src="images/about/0"+x+".png", alt="", class="img-fluid")
+                        img(src="images/about/0"+x+".png", alt="What we do", class="img-fluid")
                         p.m-0.mt-1 #{z[x]}
                     -else
                       .light-grey-bg.center.p-1
-                        img(src="images/about/0"+x+".png", alt="", class="img-fluid")
+                        img(src="images/about/0"+x+".png", alt="What we do", class="img-fluid")
                         p.m-0.mt-1 #{z[x]}
               .col-9.col-xs-12
                 .p-3.p-xs-0
@@ -129,7 +129,7 @@ html
       .container
         .row.v-center.h-center
           .col-6.col-lg-4.col-xs-6
-            img(src="images/b_beltone.png", alt="", class="img-fluid")
+            img(src="images/b_beltone.png", alt="company profile", class="img-fluid")
           .col-6.col-lg-8.col-xs-12
             p.second-color.uppercase.text-md Company Profile
             h2.white-color.text-lg.text-normal Lorem ipsum adipiscing elit, sed do eiusmod
@@ -144,7 +144,7 @@ html
         h2.main-color.text-lg.text-normal Highlights
         .row.mt-4
           .col-6.col-lg-12
-            img(src="images/blog/01.png", alt="" class="img-fluid")
+            img(src="images/blog/01.png", alt="Vestibulum nibh ligula, tempus eu porttitor sit amet" class="img-fluid")
             p.grey-color may 24, 2020
             h2.text-md.text-simibold Vestibulum nibh ligula, tempus eu porttitor sit amet
             p.grey-color Nam sollicitudin libero eget risus elementum blandit. Integer efficitur quis nisl et venenatis. Nullam iaculis tempor molestie. Praesent lectus ligula, consectetur eu tortor id, pretium molestie ante. Donec consectetur eu tortor tincidunt urna dui, sit amet dignissim quam fermentum sed.
@@ -154,7 +154,7 @@ html
             .row
               .col-6.col-sm-12
                 .border-x.border-sm-0.px-1.px-sm-0
-                  img(src="images/blog/02.png", alt="" class="img-fluid")
+                  img(src="images/blog/02.png", alt="Malesuada fames ac ante ipsum primis in faucibus" class="img-fluid")
                   p.grey-color may 15, 2020
                   h2.text-md.text-simibold Malesuada fames ac ante ipsum primis in faucibus
                   p.grey-color Nam sollicitudin libero eget risus elementum blandit. Integer efficitur quis nisl et venenatis. Nullam iaculis tempor molestie. Praesent lectus ligula, consectetur eu tortor id, pretium molestie ante. Donec consectetur eu tortor tincidunt urna dui, sit amet dignissim quam fermentum sed.
