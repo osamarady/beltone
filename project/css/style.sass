@@ -5,12 +5,13 @@
 @import "sass/_globals"
 
 // Navbar
+nav#navBar
+  z-index: 3
 .fixed
   position: fixed
   top: 0
   left: 0
   right: 0
-  z-index: 2
 
 .main-btn
   background-color: $secondary-color
@@ -156,6 +157,11 @@
   .justify-lx-start
     justify-content: start
 
+  .d-xl-block
+    display: block
+  .d-xl-none
+    display: none
+
 // Large devices (desktops, 992px and up)
 // @media (min-width: 992px) and (max-width: 1199.98px)
 @media (max-width: 992px)
@@ -173,6 +179,11 @@
   .sticker-relative-md
     position: relative
 
+  .d-lg-block
+    display: block
+  .d-lg-none
+    display: none
+
 // Medium devices (tablets, 768px and up)
 // @media (min-width: 768px) and (max-width: 991.98px)
 @media (max-width: 768px)
@@ -187,6 +198,11 @@
   .footer .footer-list li
     margin-bottom: 10px
     margin-right: 10px !important
+  
+  .d-md-block
+    display: block
+  .d-md-none
+    display: none
 
 // Small devices (landscape phones, 576px and up)
 // @media (min-width: 576px) and (max-width: 767.98px)
@@ -196,7 +212,7 @@
       width: (100%/(12/$var))
       padding: 12px
 
-  @for $N from 1 through 5
+  @for $N from 0 through 5
     .mr-sm-#{$N}
       margin-right: #{$N}rem
 
@@ -209,6 +225,11 @@
   
   .border-sm-0
     border: none
+  
+  .d-sm-block
+    display: block
+  .d-sm-none
+    display: none
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px)
@@ -225,4 +246,9 @@
 
   .p-xs-0
     padding: 0
+    
+  .d-xs-block
+    display: block
+  .d-xs-none
+    display: none
 /* == ./Responsive ==*/
