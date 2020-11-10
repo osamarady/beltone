@@ -11,7 +11,7 @@ var gulp = require('gulp'),
 gulp.task('pug', function () {
 	return gulp.src('project/*.pug')
 		.pipe(pug({
-			pretty: true
+			pretty: false
 		}))
 		.pipe(gulp.dest('dist/'))
 		.pipe(livereload());
