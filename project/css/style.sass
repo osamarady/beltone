@@ -83,6 +83,15 @@ nav#navBar
       list-style: none
       li
         padding: 15px 0
+        position: relative
+        &::before
+          content: '\f105'
+          position: absolute
+          top: 50%
+          margin-top: -8px
+          right: 0px
+          font-family: 'Line Awesome Free'
+          font-weight: 900
         a:hover
           color: $secondary-color !important
       li:not(:last-child)
@@ -102,6 +111,15 @@ nav#navBar
     overflow-y: auto
     display: none
     .mm-list
+      .mm-li
+        position: relative
+        &::before
+          content: '\f105'
+          position: absolute
+          top: 18px
+          right: 0px
+          font-family: 'Line Awesome Free'
+          font-weight: 900
       padding: 0
       list-style: none
       li
