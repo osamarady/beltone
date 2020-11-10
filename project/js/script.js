@@ -52,7 +52,14 @@ var swiperAbout = new Swiper('.about-section .swiper-container', {
 	},
 	cubeEffect: {
 		slideShadows: true,
-	  },
+	},
+	on: {
+		slideChange: function (e) {
+		/* do something */
+			var idArr = ['Trade', 'Invest', 'Advisory', 'Borrow'];
+			tabControl(idArr[e.realIndex], 'n');
+		}
+	}
 });
 
 function slidePointer(index) {
@@ -79,7 +86,6 @@ function menuHover(id) {
 function rundomArticle() {
 	var random = Math.floor(Math.random()*3),
 		element = document.getElementsByClassName('menu-article');
-	console.log(random);
 
 	for (var i = 0; i < element.length; i++) {
 		element[i].classList.remove('d-block');
@@ -104,7 +110,9 @@ for (i = 0; i < coll.length; i++) {
 }
 
 function tabControl(element, index){
-	slidePointer(index);
+	if (index != 'n') {
+		slidePointer(index);
+	}
 	var x = document.querySelectorAll('.tabe-details'),
 		taps = document.querySelectorAll('.taps');
 	
