@@ -3,7 +3,7 @@ nav.fixed#navBar
         div.row.v-center
             div.col-6.v-center
                 div.inline-block.mr-1
-                    button(onclick="menuOpener()").bg-transparent.border-none.main-color
+                    button(type="button" onclick="menuOpener()").bg-transparent.border-none.main-color
                         i.la.la-bars.la-2x
                 div.inline-block
                     a(href="/" style="display: inline-block")
@@ -24,7 +24,7 @@ nav.fixed#navBar
                 div.row.v-center
                     div.col-6.v-center
                         div.inline-block.mr-1
-                            button(onclick="menuCloser()").bg-transparent.border-none.main-color
+                            button(type="button" onclick="menuCloser()").bg-transparent.border-none.main-color
                                 i.la.la-times.la-2x
                         div.inline-block
                             a(href="/" style="display: inline-block")
@@ -89,7 +89,7 @@ nav.fixed#navBar
         
         // Descktop mega Menu
         #mobileMenu.mobile-menu.d-none.d-lg-block.p-2
-            button(onclick="menuCloser()").bg-transparent.border-none.main-color
+            button(type="button" onclick="menuCloser()").bg-transparent.border-none.main-color
                 i.la.la-times.la-2x
             div.center.mt-2
                 img(src="images/logo.png", alt="Beltone", width="150", class="img-fluid")

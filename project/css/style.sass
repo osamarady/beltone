@@ -203,12 +203,17 @@ nav#navBar
   right: 20px
   bottom: 20px
   z-index: 2
+  &:hover
+    a
+      transform: rotate(360deg)
+      background-color: #823a3a
   a, .call-txt
     display: inline-block
     box-shadow: 1px 1px 7px rgba(0,0,0,.3)
   a
     padding: 10px
     border-radius: 50%
+    transition: all .5s ease-in-out
   .call-txt
     background-color: #fff
     border-radius: 15px
