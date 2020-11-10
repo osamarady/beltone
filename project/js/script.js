@@ -1,5 +1,17 @@
 /*global $, document, window*/
 
+
+window.onload = function () {
+	setTimeout(function () {
+		document.getElementById('snippet').style.opacity = "0";
+		setTimeout(function () {
+			document.getElementById('snippet').style.display = "none";
+		}, 500);
+	}, 1000);
+	// $(".snippet").delay(800).fadeOut('slow');
+};
+
+
 //=== NavBar After Scroll
 window.addEventListener("scroll", navScroll);
 
@@ -21,6 +33,13 @@ var swiper = new Swiper('.swiper-container', {
 	  nextEl: '.swiper-button-next',
 	  prevEl: '.swiper-button-prev',
 	},
+	loop: true,
+	autoplay: {
+		delay: 5000,
+	},
+	cubeEffect: {
+		slideShadows: true,
+	  },
 });
 
 function menuOpener() {
