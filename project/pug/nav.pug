@@ -47,44 +47,109 @@ nav.fixed#navBar
                             .col-6.col-md-12
                                 .border-right.p-1
                                     ul.mm-list
-                                        li
+                                        li(onmouseover="menuHover('menu_home')")
                                             a(href="#").main-color Home
-                                        li
+                                        li(onmouseover="menuHover('menu_firm')")
                                             a(href="#").main-color Our Firm
-                                        li
+                                        li(onmouseover="menuHover('menu_business')")
                                             a(href="#").main-color Our Business
-                                        li
+                                        li(onmouseover="menuHover('menu_investor')")
                                             a(href="#").main-color Investor Relations
-                                        li
+                                        li(onmouseover="menuHover('menu_media')")
                                             a(href="#").main-color Media Relations
-                                        li
+                                        li(onmouseover="menuHover('menu_careers')")
                                             a(href="#").main-color Careers
-                                        li
+                                        li(onmouseover="menuHover('menu_contact')")
                                             a(href="#").main-color Contact Us
                             .col-6.col-md-12
-                                .p-3
+                                #menu_home.menu-hvr.p-3.d-none
                                     ul.mm-list
-                                        li 
-                                            a(href="#").main-color Stock Overview
-                                        li
+                                        li(onmouseover="rundomArticle()")
                                             a(href="#").main-color Owners and Subsidiaries
-                                        li
+                                        li(onmouseover="rundomArticle()")
                                             a(href="#").main-color Company Profile
-                                        li
+                                        li(onmouseover="rundomArticle()")
                                             a(href="#").main-color Insider Transactions
-                                        li
-                                            a(href="#").main-color Disclosures
-                                        li
-                                            a(href="#").main-color Investor Protection
-                                        li
+                                        li(onmouseover="rundomArticle()")
                                             a(href="#").main-color IR Media Relations
+                                #menu_firm.menu-hvr.p-3.d-none
+                                    ul.mm-list
+                                        li(onmouseover="rundomArticle()")
+                                            a(href="#").main-color Insider Transactions
+                                        li(onmouseover="rundomArticle()")
+                                            a(href="#").main-color Disclosures
+                                        li(onmouseover="rundomArticle()")
+                                            a(href="#").main-color Investor Protection
+                                        li(onmouseover="rundomArticle()")
+                                            a(href="#").main-color IR Media Relations
+                                #menu_business.menu-hvr.p-3.d-none
+                                    ul.mm-list
+                                        li(onmouseover="rundomArticle()")
+                                            a(href="#").main-color Insider Transactions
+                                        li(onmouseover="rundomArticle()")
+                                            a(href="#").main-color Disclosures
+                                        li(onmouseover="rundomArticle()") 
+                                            a(href="#").main-color Stock Overview
+                                        li(onmouseover="rundomArticle()")
+                                            a(href="#").main-color Owners and Subsidiaries
+                                        li(onmouseover="rundomArticle()")
+                                            a(href="#").main-color Company Profile
+                                #menu_investor.menu-hvr.p-3.d-none
+                                    ul.mm-list
+                                        li(onmouseover="rundomArticle()")
+                                            a(href="#").main-color Insider Transactions
+                                        li(onmouseover="rundomArticle()")
+                                            a(href="#").main-color Disclosures
+                                #menu_media.menu-hvr.p-3.d-none
+                                    ul.mm-list
+                                        li(onmouseover="rundomArticle()") 
+                                            a(href="#").main-color Stock Overview
+                                        li(onmouseover="rundomArticle()")
+                                            a(href="#").main-color Owners and Subsidiaries
+                                        li(onmouseover="rundomArticle()")
+                                            a(href="#").main-color IR Media Relations
+                                #menu_careers.menu-hvr.p-3.d-none
+                                    ul.mm-list
+                                        li(onmouseover="rundomArticle()") 
+                                            a(href="#").main-color Stock Overview
+                                        li(onmouseover="rundomArticle()")
+                                            a(href="#").main-color Owners and Subsidiaries
+                                        li(onmouseover="rundomArticle()")
+                                            a(href="#").main-color Company Profile
+                                        li(onmouseover="rundomArticle()")
+                                            a(href="#").main-color Insider Transactions
+                                        li(onmouseover="rundomArticle()")
+                                            a(href="#").main-color IR Media Relations
+                                #menu_contact.menu-hvr.p-3.d-none
+                                    ul.mm-list
+                                        li(onmouseover="rundomArticle()") 
+                                            a(href="#").main-color Stock Overview
+                                        li(onmouseover="rundomArticle()")
+                                            a(href="#").main-color Owners and Subsidiaries
+                                        li(onmouseover="rundomArticle()")
+                                            a(href="#").main-color Company Profile
                     .col-6.col-md-12.article.p-3
-                        a(href="#")
-                            img(src="images/article.png", alt="Lorem ipsum dolor sit amet, consectetur elit", class="img-fluid")
-                        p
-                            a(href="#").grey-color Lorem ipsum dolor sit amet, consectetur elit
-                        p
-                            a(href="#").text-bold.second-color Read More
+                        #menuArticleOne.menu-article.d-none
+                            a(href="#")
+                                img(src="images/article.png", alt="Lorem ipsum dolor sit amet, consectetur elit", class="img-fluid")
+                            p
+                                a(href="#").grey-color sed do eiusmod tempor incididunt ut labore.
+                            p
+                                a(href="#").text-bold.second-color Read More
+                        #menuArticleTwo.menu-article.d-none
+                            a(href="#")
+                                img(src="images/article_2.png", alt="Lorem ipsum dolor sit amet, consectetur elit", class="img-fluid")
+                            p
+                                a(href="#").grey-color Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            p
+                                a(href="#").text-bold.second-color Read More
+                        #menuArticleThree.menu-article.d-none
+                            a(href="#")
+                                img(src="images/article_3.png", alt="Lorem ipsum dolor sit amet, consectetur elit", class="img-fluid")
+                            p
+                                a(href="#").grey-color minima accusamus corporis quisquam, consequuntur, officia quas possimus laboriosam?
+                            p
+                                a(href="#").text-bold.second-color Read More
 
         
         // Descktop mega Menu

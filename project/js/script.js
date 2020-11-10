@@ -49,6 +49,26 @@ function menuCloser() {
 	document.getElementById("megaMenu").classList.remove("open");
 }
 
+function menuHover(id) {
+	var element = document.getElementsByClassName('menu-hvr');
+	
+	for (var i = 0; i < element.length; i++) {
+		element[i].classList.remove('d-block');
+	}
+	document.getElementById(id).classList.add('d-block');
+}
+
+function rundomArticle() {
+	var random = Math.floor(Math.random()*3),
+		element = document.getElementsByClassName('menu-article');
+	console.log(random);
+
+	for (var i = 0; i < element.length; i++) {
+		element[i].classList.remove('d-block');
+	}
+	element[random].classList.add('d-block');
+}
+
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -79,8 +99,6 @@ function tabControl(element){
 
 
 var x = document.getElementsByClassName('carousel-img');
-
-console.log(document.getElementById('sliderUpper').offsetHeight, x.length);
 
 for (var i = 0; i < x.length; i++) {
 	x[i].style.height = (document.getElementById('sliderUpper').clientHeight +200)  + 'px';
